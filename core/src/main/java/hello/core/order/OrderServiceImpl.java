@@ -31,6 +31,7 @@ public class OrderServiceImpl implements OrderService {
     private final DiscountPolicy discountPolicy;   //할인 정책 결정
 
     //생성자 주입
+    //속성으로 선언을 해두고 DI 를 해주지 않으면 구현체가 없으므로 unll pointer exception
     //생성자가 하나만있으면 @Autowired 생략이 가능하다
     //@Autowired
     @Override
